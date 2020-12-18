@@ -9,6 +9,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    overflow: auto;
 }
 
 /* Header Begin */
@@ -39,33 +40,49 @@ html, body {
 /* Content Begin */
 
 .content {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-wrap: wrap;
     background-color: bisque;
     margin: 0;
     padding: 30px 45px;
+    background-image: url(../images/bg-img.jpg);
+    background-attachment: fixed;
+    background-position: 100%;
+}
+
+
+h2 {
+    font-weight: lighter;
 }
 
 .about-me {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: left;
+    align-items: center;
 }
 
 .about-me h2 {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-me p {
-    width: 80%;
-    padding: 50px;
+    width: 100%;
 }
 
 .about-text {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around; 
+    border-left: black;
+    border: 5px;
 }
 
 .work {
-    width: 100%;
+    width: 80%;
 }
 
 .content {
