@@ -1,3 +1,4 @@
+
 /* Overall Styling */
 
 * {
@@ -15,16 +16,18 @@ html, body {
 /* Header Begin */
 
 .header {
-    display: flex;
     padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url(../images/header-bg.jpg);
+    background-image: url("../images/header-bg.jpg");
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
+    background-position: 80%;
+    z-index: 9999;
   }
 
 .header h1 {
@@ -33,6 +36,13 @@ html, body {
     text-align: left;
     border: none;
     margin: 0;
+}
+
+.header-links {
+    display: flex;
+    flex-wrap: wrap;
+    text-emphasis: none;
+    text-decoration: none;
 }
 
 /* header end */
@@ -100,3 +110,6 @@ footer {
 /* footer end */
 
 /* Media Queries Begin */
+
+
+/* YOUTUBE FOLLOW START */
