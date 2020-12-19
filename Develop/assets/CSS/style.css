@@ -11,10 +11,12 @@
     margin: 0;
 }
 
-html, body {
+body {
     height: 100%;
     margin: 0;
     overflow: auto;
+    font-family: Copperplate Gothic Light, sans-serif;
+    font-weight: bolder;
 }
 
 /* Header Begin */
@@ -23,8 +25,12 @@ h2 {
     color: var(--light-white);
 }
 
-.header {
-    padding: 25px 40px;
+p {
+    color: var(--light-white);
+}
+
+header {
+    padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -32,39 +38,55 @@ h2 {
     position: -webkit-sticky;
     top: 0;
     background-color: var(--bg-dark);
-    /*
-    background-image: url("../images/header-bg.jpg");
-    */
     background-size: cover;
     background-position: 100%;
     z-index: 9999;
   }
 
-.header h1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+header h1 {
     font-weight: lighter;
-    text-align: left;
     border: none;
     margin: 0;
+    font-size: 36px;
     color: var(--light-white);
+}
+
+header nav {
+    margin: 7px 0;
+
 }
 
 a {
     display: flex;
-    flex-wrap: wrap;
     text-emphasis: none;
     text-decoration: none;
     color: var(--light-white);
     align-items: center;
     list-style: none;
+    font-size: ;
 }
+
+.header-links nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+.header-links ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2vw;
+    text-shadow: 0 0 10px rgba(75, 81, 82, 0.5);
+}
+
 
 /* header end */
 
 /* Content Begin */
 
 .content {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -75,6 +97,7 @@ a {
     */
     background-attachment: fixed;
     background-position: 100%;
+    width: 100%;
 }
 
 
@@ -87,7 +110,7 @@ h2 {
     flex-wrap: wrap;
     width: 100%;
     justify-content: left;
-    align-items: center;
+
 }
 
 .about-me h2 {
@@ -103,14 +126,20 @@ h2 {
     border-left: black;
     border: 5px;
     color: rgb(236, 232, 226);
+    align-items: right;
+    margin: 70px 80px;
 }
 
 .work {
     width: 80%;
 }
 
-.content {
-    width: 100%;
+.work a {
+    margin: 70px 80px;
+}
+
+.contact {
+    width: 100%
 }
 
 /* content end */
