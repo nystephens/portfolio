@@ -175,6 +175,19 @@ a {
     justify-content: center;
 }
 
+.projects ul li  a img {
+    position: relative;
+    width: 100%;
+}
+
+.projects ul li  a  h2 {
+    position: absolute; 
+    left: 0; 
+    width: 100%; 
+    color: rebeccapurple;
+    z-index: 100;
+}
+
 .contact {
     display: flex;
     flex-wrap: wrap;
