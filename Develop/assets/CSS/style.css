@@ -185,10 +185,11 @@ a {
 
 .projects ul li a h2 {
     position: relative; 
-    right: 132px;
+    right: 141px;
     width: 100%; 
     color: var(--bg-dark);
     z-index: 100;
+    font-size: 1.8vw;
 }
 
 .project-1 {
@@ -250,20 +251,32 @@ footer {
 
 @media screen and (max-width: 980px) {
 
-    
-
-    .nate {
-        max-width: 100%;
-        height: auto;
-    }
-
     .projects ul {
         grid-template-columns: repeat(2, 100px);
         grid-template-rows: repeat(2, 100px);
     }
 
     .projects ul li a h2 { 
-        right: 69.5px;
-        font-size: 3.2vw;
+        right: 63px;
+        font-size: 1vw;
     }
 }
+
+@media screen and (max-width: 720px) {
+
+    .projects ul li a h2 { 
+        right: 63px;
+        font-size: 1.3vw;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .projects ul li a h2 { 
+        font-size: 2.5vw;
+        right: 66px;
+        
+    }
+}
+
