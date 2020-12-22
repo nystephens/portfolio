@@ -30,7 +30,7 @@ p {
 
 /* Header Begin */
 
-header {
+.header {
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
@@ -42,6 +42,7 @@ header {
     background-size: cover;
     background-position: 100%;
     z-index: 9999;
+    align-items: center;
   }
 
 header h1 {
